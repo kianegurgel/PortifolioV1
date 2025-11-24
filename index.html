@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Dark Pastel</title>
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(160deg, #1b1b27, #2d233d, #3a2a4f);
+      background-size: 400% 400%;
+      animation: softGradient 18s ease infinite;
+      color: #f5eaff;
+      overflow-x: hidden;
+    }
+
+    /* Stars Background */
+    .stars { display: none; }
+
+    
+      to { background-position: -10000px 5000px; }
+    }
+
+    header {
+      text-align: center;
+      padding: 90px 20px;
+    }
+
+    header h1 {
+      font-size: 3.2rem;
+      font-weight: 700;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: -10px;
+      opacity: 0.8;
+    }
+
+    .btns {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .btns a {
+      padding: 12px 22px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.07);
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #f5eaff;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: all 0.5s ease; /* adjusted */: 0.3s;
+    }
+
+    .btns a:hover {
+      transform: translateY(-4px);
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    /* Icons */
+    .social {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .social a img {
+      width: 34px;
+      height: 34px;
+      filter: brightness(0) invert(1);
+      transition: 0.3s;
+    }
+
+    .social a img:hover {
+      transform: scale(1.15);
+    }
+
+    section {
+      padding: 70px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 25px;
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(6px);
+      margin-bottom: 25px;
+      animation: fadeInUpSlow 1s ease;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsividade */
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.4rem; }
+      section h2 { font-size: 1.6rem; }
+    }
+  @keyframes softGradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="stars"></div>
+
+  <header data-aos="fade-down">
+    <h1 style="color:#c8ffe6; font-size:3.4rem; font-weight:700;">Hi. I'm Kiane.</h1>
+    <h1 style="color:#c8ffe6; font-size:3.4rem; font-weight:700; margin-top:-20px;">A QA Engineer & FullStack Developer.</h1>
+    <p style="color:#e8fff6; opacity:0.9; margin-top:10px;">Java • Testes Automatizados • Qualidade & Performance</p>
+
+    <div class="btns">
+      <a href="#en" style="background:rgba(255,255,255,0.12);">English Version</a>
+      <a href="Profile .pdf" download style="background:rgba(255,255,255,0.12);">Baixar Curriculo</a>
+      <a href="#sobre">Sobre mim</a>
+      <a href="#skills">Skills</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#projetos">Projetos</a>
+    </div>
+
+    <div class="social">
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png"></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"></a>
+    </div>
+  </header>
+
+  <section id="sobre" data-aos="fade-up">
+    <h2>✨ Sobre mim</h2>
+    <div class="card">
+Sou QA Engineer com experiência em testes funcionais, automatizados e garantia de qualidade.
+Apaixonada por criar fluxos estáveis, detectar riscos antes que se tornem problemas e contribuir diretamente para a excelência de produtos digitais.
+Também atuo como Desenvolvedora Full-Stack, criando soluções escaláveis, interfaces modernas e integrações eficientes entre front-end e back-end.   
+</div>
+  </section>
+
+  <section id="sobre" data-aos="fade-up">
+    <h2>📞 Contatos</h2>
+    <div class="card"> 
+      E-mail: kianeandrade14@gmail.com <br> 
+      Celular: (81) 992017025
+   </div>
+  </section>
+
+  <section id="skills" data-aos="fade-up">
+    <h2>🛠️ Skills</h2>
+    <div class="card">
+      • Testes automatizados (Selenium, Postman)<br>
+      • Testes de API REST<br>
+      • SQL, PL/SQL<br>
+      • Versionamento com Git<br>
+      • CI/CD 
+    </div>
+  </section>
+
+  <section id="experiencia" data-aos="fade-up">
+    <h2>💼 Experiência</h2>
+    <div class="card">
+      Atuação com validação de jornadas completas (testes regressivos), criação de cenários,
+      documentação, automação de testes e suporte à qualidade em squads ágeis.
+    </div>
+  </section>
+
+  <section id="projetos" data-aos="fade-up">
+    <h2>📁 Projetos</h2>
+    <div class="card">
+      • Automação Web com Selenium<br>
+      • Testes de API com Newman e Postman<br>
+    </div>
+  </section>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 900, easing: 'ease-out-quart'});
+  </script>
+  <!-- English Version -->
+  <section id="en" data-aos="fade-up">
+    <h2>✨ About Me</h2>
+    <div class="card">
+      I am a QA Engineer with experience in functional testing, test automation, and quality assurance.
+I am passionate about creating stable workflows, identifying risks before they become issues, and contributing directly to the excellence of digital products.
+I also work as a Full-Stack Developer, building modern interfaces, ensuring clean and maintainable code, and developing scalable solutions that effectively connect front-end and back-end.
+    </div>
+
+  
+    <h2>📞 Contact</h2>
+    <div class="card"> 
+      E-mail: kianeandrade14@gmail.com <br> 
+      Phone: +55 (81) 992017025
+    </div>
+  
+
+    <h2>🛠️ Skills</h2>
+    <div class="card">
+      • Automated tests (Selenium, Cypress, Postman)<br>
+      • REST API Testing<br>
+      • SQL, PL/SQL<br>
+      • Git versioning<br>
+      • Basic CI/CD
+    </div>
+
+    <h2>💼 Experience</h2>
+    <div class="card">
+      Work with full regression journeys, scenario creation, documentation, automated testing and support
+      for quality across agile squads.
+    </div>
+
+    <h2>📁 Projects</h2>
+    <div class="card">
+      • Web Automation with Selenium<br>
+      • API Testing with Newman and Postman<br>
+    </div>
+  </section>
+
+<script>
+function setLang(lang){
+  document.querySelectorAll('[data-lang]').forEach(el=>{
+    el.style.display = el.getAttribute('data-lang')===lang?'block':'none';
+  });
+}
+</script>
+</body>
+</html>
